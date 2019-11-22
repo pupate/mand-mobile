@@ -16,7 +16,8 @@
   </div>
 </template>
 
-<script>import {ScrollView, Toast} from 'mand-mobile'
+<script>
+import {ScrollView, Toast} from 'mand-mobile'
 
 export default {
   name: 'scroll-view-demo-0',
@@ -47,13 +48,14 @@ export default {
       console.log(`[Mand Mobile ScrollView - demo0 - onScroll] scrollLeft: ${scrollLeft}, scrollTop: ${scrollTop}`)
     },
     addItems() {
-      this.list += 5
+      this.list += 10
       // 如果把autoReflow设置为false, 需调用reflowScroller
       this.$refs.scrollView.reflowScroller()
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-example-child-scroll-view-0
